@@ -5,375 +5,726 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="anime web site">
-    <meta name="keywords" content="anime, manga, japan, cartoon">
-    <title>Anime4Up</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>Anime 4 Up</title>
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="top">
+<body>
     <header>
         <div class="container">
-            <a href="#" class="logo"><img src="image/logo.png" alt=""></a>
-            <nav>
-                <span class="burger-menu"><i id="burger" class="fa-solid fa-bars">menu</i></span>
-                <ul id="menu">
-                    <li><a href="#">main</a></li>
-                    <li><a href="#">anime list</a></li>
-                    <li><a href="#">anime films</a></li>
-                    <li><a href="#">season animes</a></li>
-                    <li><a href="#">episodes dates</a></li>
-                    <li><a href="#">love story</a></li>
-                    <li><a href="#">contact us</a></li>
-                </ul>
-            </nav>
-            <div class="tools">
-                <i id="user" class="fas fa-user fa-fw"></i>
-                <div id="login" class="login">
-                    <p>login</p>
-                    <p>new membership</p>
-                    <p>forgot password?</p>
-                </div>
-                <i id="glass" class="fas fa-magnifying-glass fa-fw"></i>
-                <i id="day-Night" class="fas fa-sun fa-fw"></i>
+            <img src="image/logo.png" alt="" class="logo">
+            <div class="menu-control">
+                <span class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <p>
+                    القائمة
+                </p>
             </div>
-            <div id="search" class="search">
-                <span class="close"><i class="fa-solid fa-xmark fa-fw"></i>close</span>
-                <div class="form">
-                    <input type="text" placeholder="search in the site">
-                    <button><i class="fas fa-magnifying-glass"></i></button>
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        الرئيسية
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        قائمة الانمي
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        افلام الانمي
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        الانميات الموسمية
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        حلقات الانمي
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        قصة عشق
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        تواصل معنا
+                    </a>
+                </li>
+            </ul>
+            <ul class="control">
+                <li>
+                    <i id="user" class="fas fa-user fa-fw"></i>
+                </li>
+                <div class="login">
+                    <a href="#">
+                        تسجيل دخول
+                    </a>
+                    <a href="#">
+                        اشتراك
+                    </a>
+                    <a href="#">
+                        نسيت كلمة المرور
+                    </a>
+                </div>
+                <li>
+                    <i id="glass" class="fas fa-magnifying-glass fa-fw"></i>
+
+                </li>
+                <li>
+                    <i id="day-Night" class="fa-solid fa-sun fa-fw"></i>
+                </li>
+            </ul>
+            <div class="search-div">
+                <i class="xmark fa-solid fa-xmark fa-fw"></i>
+                <div class="search-form">
+                    <input type="text" class="search-input" placeholder="ابحث في الموقع">
+                    <button>
+                        <i class="fas fa-magnifying-glass fa-fw"></i>
+                    </button>
                 </div>
             </div>
+            <div class="search-result"> </div>
         </div>
     </header>
-    <section class="landing">
-        <div class="text">
-            <h1>over lord IV</h1>
-            <span class="episode">episod 5</span>
+    <section class="slider">
+        <img data-name="One Piece" src="image/one-piece.png" alt="">
+        <img data-name="Classroom Elite" src="image/slide-1.png" alt="">
+        <img data-name="Over Lord" src="image/slide-2.png" alt="">
+        <div class="content">
+            <h1 class="title">One Piece</h1>
+            <p>الحلقة 13</p>
         </div>
-        <ul class="balls">
+        <ul class="bullets">
             <li></li>
-            <li class="active"></li>
+            <li></li>
             <li></li>
         </ul>
     </section>
-    <section class="fixed-anime one" id="one">
+    <section class="fixed-anime">
         <div class="container">
-            <div class="anime">
-                <div class="image">
-                    <img src="image/fixed-1.jpg" alt="anime 1">
-                </div>
-                <h4>over lord IV</h4>
+            <div class="main-title">
+                الانميات المثبتة
             </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/fixed-2.jpg" alt="anime 1">
+            <div class="slider-FA">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Over lord</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>tensei kenja no isekai</h4>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Over lord</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Over lord</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-4.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Over lord</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-5.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Over lord</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-6.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Over lord</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
             </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/fixed-3.jpg" alt="anime 1">
-                </div>
-                <h4>over lord IV</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/fixed-4.jpg" alt="anime 1">
-                </div>
-                <h4>tensei kenja no isekai</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/fixed-5.jpg" alt="anime 1">
-                </div>
-                <h4>over lord IV</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/fixed-6.jpg" alt="anime 1">
-                </div>
-                <h4>tensei kenja no isekai</h4>
+            <div class="control-arrow">
+                <i class="right fa-solid fa-angle-right fa-fw"></i>
+                <i class="left fa-solid fa-angle-left fa-fw"></i>
             </div>
         </div>
+        <div class="triangle"></div>
     </section>
-    <section class="fixed-episodes two">
+    <section class="fixed-episodes">
         <div class="container">
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-1.jpg" alt="">
+            <div class="head">
+                <div class="main-title">
+                    حلقات الانمي المثبتة
                 </div>
-                <span>episode 1</span>
-                <h4>anime number 1</h4>
+                <div class="more">
+                    المزيد من الحلقات
+                </div>
             </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-2.jpg" alt="">
+            <div class="box">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 2</span>
-                <h4>anime number 2</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-3.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 3</span>
-                <h4>anime number 3</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-4.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-3.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 4</span>
-                <h4>anime number 4</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-5.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 5</span>
-                <h4>anime number 5</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-6.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-5.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 6</span>
-                <h4>anime number 6</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-7.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-6.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 7</span>
-                <h4>anime number 7</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-8.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-7.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 8</span>
-                <h4>anime number 8</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-9.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-8.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 9</span>
-                <h4>anime number 9</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-10.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-9.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 10</span>
-                <h4>anime number 10</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-11.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-10.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 11</span>
-                <h4>anime number 11</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-12.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-11.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 12</span>
-                <h4>anime number 12</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-13.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-12.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 13</span>
-                <h4>anime number 13</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-14.jpg" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-13.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 14</span>
-                <h4>anime number 14</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-15.jpg" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-14.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 15</span>
-                <h4>anime number 15</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/ep-fixed-16.jpg" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-15.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
                 </div>
-                <span>episode 16</span>
-                <h4>anime number 16</h4>
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/ep-fixed-16.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Attak no Titan</h3>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="triangle"></div>
     </section>
-    <section class="most-viewed one" id="three">
+    <section class="most-viewed">
         <div class="container">
-            <div class="anime">
-                <div class="image">
-                    <img src="image/most-viewed-1.jpg" alt="anime 1">
+            <div class="head">
+                <div class="main-title">
+                    اكثر الانميات مشاهدة
                 </div>
-                <h4>over lord IV</h4>
+                <div class="control-arrow">
+                    <i class="right fa-solid fa-angle-right fa-fw"></i>
+                    <i class="left fa-solid fa-angle-left fa-fw"></i>
+                </div>
             </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/most-viewed-2.jpg" alt="anime 1">
+            <div class="slider-MV">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/most-viewed-1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>tensei kenja no isekai</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/most-viewed-3.png" alt="anime 1">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/most-viewed-2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>over lord IV</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/most-viewed-4.png" alt="anime 1">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/most-viewed-3.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>tensei kenja no isekai</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/most-viewed-5.png" alt="anime 1">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/most-viewed-4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>over lord IV</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/most-viewed-6.jpg" alt="anime 1">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/most-viewed-5.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>tensei kenja no isekai</h4>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/most-viewed-6.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-4.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="triangle"></div>
     </section>
-    <section class="last-episodes two">
+    <section class="last-episodes">
         <div class="container">
-            <div class="episode">
-                <div class="image">
-                    <img src="image/last-ep-1.jpg" alt="">
+            <div class="head">
+                <div class="main-title">
+                    اخر الحلقات المضافة
                 </div>
-                <span>episode 1</span>
-                <h4>anime number 1</h4>
+                <div class="more">
+                    المزيد من الحلقات
+                </div>
             </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/last-ep-2.jpeg" alt="">
+            <div class="box">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/last-ep-1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Danmahi</h3>
+                    </div>
                 </div>
-                <span>episode 2</span>
-                <h4>anime number 2</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/last-ep-3.jpg" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/last-ep-2.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Danmahi</h3>
+                    </div>
                 </div>
-                <span>episode 3</span>
-                <h4>anime number 3</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/last-ep-4.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/last-ep-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Danmahi</h3>
+                    </div>
                 </div>
-                <span>episode 4</span>
-                <h4>anime number 4</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/last-ep-5.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/last-ep-4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Danmahi</h3>
+                    </div>
                 </div>
-                <span>episode 5</span>
-                <h4>anime number 5</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/last-ep-6.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/last-ep-5.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Danmahi</h3>
+                    </div>
                 </div>
-                <span>episode 6</span>
-                <h4>anime number 6</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/last-ep-7.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/last-ep-6.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Danmahi</h3>
+                    </div>
                 </div>
-                <span>episode 7</span>
-                <h4>anime number 7</h4>
-            </div>
-            <div class="episode">
-                <div class="image">
-                    <img src="image/last-ep-8.png" alt="">
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/last-ep-7.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Danmahi</h3>
+                    </div>
                 </div>
-                <span>episode 8</span>
-                <h4>anime number 8</h4>
+                <div class="cardF">
+                    <div class="image">
+                        <img src="image/last-ep-8.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>
+                            الحلقة 10
+                        </p>
+                        <h3>Danmahi</h3>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="triangle"></div>
     </section>
-    <section class="last-anime one" id="five">
+    <section class="last-animes">
         <div class="container">
-            <div class="anime">
-                <div class="image">
-                    <img src="image/last-anime-1.png" alt="anime 1">
+            <div class="head">
+                <div class="main-title">
+                    اخر الانميات المضافة
                 </div>
-                <h4>over lord IV</h4>
+                <div class="control-arrow">
+                    <i class="right fa-solid fa-angle-right fa-fw"></i>
+                    <i class="left fa-solid fa-angle-left fa-fw"></i>
+                </div>
             </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/last-anime-2.png" alt="anime 1">
+            <div class="slider-LA">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/last-anime-1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>tensei kenja no isekai</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/last-anime-3.png" alt="anime 1">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/last-anime-2.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>over lord IV</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/last-anime-4.png" alt="anime 1">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/last-anime-3.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>tensei kenja no isekai</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/last-anime-5.png" alt="anime 1">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/last-anime-4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>over lord IV</h4>
-            </div>
-            <div class="anime">
-                <div class="image">
-                    <img src="image/last-anime-6.png" alt="anime 1">
+                <div class="card">
+                    <div class="image">
+                        <img src="image/last-anime-5.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
                 </div>
-                <h4>tensei kenja no isekai</h4>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/last-anime-6.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-4.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-5.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="image/fixed-6.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tensi Kenja isekai life</h3>
+                        <span class="type">TV</span>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="triangle"></div>
     </section>
+    <div class="barrier"></div>
     <footer>
         <div class="container">
-            <div class="privacy">
-                <a href="#">DMCA</a>
-                <a href="#">privacy policy</a>
-            </div>
-            <div class="social">
-                <a href="#"><i class="fa-brands fa-telegram fa-fw"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube fa-fw"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter fa-fw"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
-            </div>
-            <p class="copyright">redesigned & copyed by <span>hamada yasser</span></p>
+            <p class="privacy">
+                DMCA | سياسة الخصوصية
+            </p>
+            <ul class="social">
+                <li><i class="fa-brands fa-telegram fa-fw"></i></li>
+                <li><i class="fa-brands fa-instagram fa-fw"></i></li>
+                <li><i class="fa-brands fa-youtube fa-fw"></i></li>
+                <li><i class="fa-brands fa-twitter fa-fw"></i></li>
+                <li><i class="fa-brands fa-facebook-f fa-fw"></i></li>
+            </ul>
+            <p class="copyright">
+                Re Designed By <span>Hamada Yasser</span> in 2022
+            </p>
         </div>
     </footer>
-    <button class="notifications"><i class="fa-solid fa-bell"></i></button>
-    <a href="#top" class="up"><i class="fa-solid fa-rocket"></i></a>
-    <script src="js/main.js"></script>
+    <div class="notification">
+        <i class="fa-solid fa-bell fa-fw"></i>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
